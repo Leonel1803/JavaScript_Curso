@@ -6,14 +6,12 @@ const evenNumbers = numbers.filter(number => number % 2 === 0) //Devuleve un arr
 console.log(numbers)
 console.log(evenNumbers)
 
-//reduce() Reducir un array a un solo valor
-const numbersReduce=[1,2,3,4,5]
-const sum=numbersReduce.reduce((accumulator,currentValue) => accumulator+currentValue,0)
+//reduce() Reducir un array a un solo valor. Itera el array
+const numbersReduce=[1, 2, 3, 4, 5]
+const sum = numbersReduce.reduce((accumulator, currentValue) => accumulator + currentValue, 0) //Hace la suma de todos los valores y termina teniendo un solo valor. El valor con el que inicia es 0
 console.log(numbersReduce)
 console.log(sum)
 
-
-//Ejercicio
 const words=['apple','banana','hello','bye','banana','bye','bye']
 const wordFrecuency = words.reduce((accumulator,currentValue) => 
     {
@@ -21,13 +19,15 @@ const wordFrecuency = words.reduce((accumulator,currentValue) =>
             accumulator[currentValue]++
         }
         else{
-        accumulator[currentValue]=1
+            accumulator[currentValue] = 1
         }
-        return accumulator
+
+        return accumulator //Regresa un objeto con el contador de vbeces que se repitió cada elemento del array
     }
-    ,{}
+    ,{} //Indica que el valor inicial va a ser un objeto vacío
 )
 console.log(wordFrecuency)
+
 
 //Ejercicio
 const grades=[85,92,60,78,95,66,88,50,94]
