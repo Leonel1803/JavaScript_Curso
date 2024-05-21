@@ -1,5 +1,5 @@
 class Course {
-    constructor({
+    constructor({ //Recibe un objeto como parámetro. ya no debes poner los parámetros en orden al llamar al constructo, solo debe coindisir el nombre del atributo que mandes
       name,
       classes = [],
     }) {
@@ -21,9 +21,12 @@ class Course {
     }
 }
   
-const cursoProgBasica = new Course({ //Así llamamos a nuestro método set name de nuestra clase Course
-    name: "Curso Gratis de Programación Básica", //Este es el parámetro
+const cursoProgBasica = new Course({ //Así llamamos a nuestro método set name de nuestra clase Course. Usando "name" de método y no de atributo
+    name: "Curso Gratis de Programación Básica", //Este es el parámetro. Usa "name" como intermediario para asignar un valor a _name
 });
+
+cursoProgBasica.name = "Curso Malito de Programación Básica" //usa el set de name pero por su condición no hacela nueva asignación
+console.log(cursoProgBasica.name); //usa el get de name
   
 const cursoDefinitivoHTML = new Course({
     name: "Curso Definitivo de HTML y CSS",
