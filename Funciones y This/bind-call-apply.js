@@ -10,7 +10,7 @@ const newHouse = {
     dogName: 'Coconut'
 }
 
-dogGreeting.call(newHouse, owner, address)
+dogGreeting.call(newHouse, owner, address) //Lama a la función con valores de un contexto, en este caso de newHouse
 
 
 //Enlace explicito con apply

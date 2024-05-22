@@ -25,7 +25,7 @@ console.log(unsortedNumbers1)
 console.log(unicodeSortedNumbers)
 
 const unsortedNumbers2 = [4, 18, 1, 62, 34]
-const sortedNumbers = unsortedNumbers2.sort((a, b) => a - b) //Ordena del menro al mayor. a valor de izquierda, b valor de la derecha
+const sortedNumbers = unsortedNumbers2.sort((a, b) => a - b) //Ordena del menor al mayor. a valor de izquierda, b valor de la derecha
 //4 - 18 = -14 da resultado negativo, por lo tanto interpreta que 4 es menor que 18, por lo tanto lo deja así
 //18 - 1 = 17da resultado positivo, por lo tanto interpreta que 18 es mayor que 1, por lo tanto cambian de posición
 
